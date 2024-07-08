@@ -1,0 +1,29 @@
+.promo-code-container {
+    margin-bottom: 24px;
+}
+
+.promo-code-input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.promo-code-select {
+    margin-right: 12px;
+}
+
+.apply-button {
+    width: 100px;
+}
+
+.promo-code-success {
+    margin-top: 12px;
+}
+
+.discount-amount {
+    color: #52c41a;
+}
+
+.promo-code-error {
+    margin-top: 12px;
+}

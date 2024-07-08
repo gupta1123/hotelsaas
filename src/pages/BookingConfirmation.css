@@ -1,0 +1,233 @@
+ 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.header-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left h3 {
+    margin-left: 10px;
+}
+
+.back-button, .options-button, .edit-button, .add-guest-button, .show-guests-button, .expand-button, .delete-button, .toggle-transactions-button, .add-transaction-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.options-button {
+    background: white;
+    color: #333;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.options-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: #333;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu a:hover {
+    background: #f1f1f1;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.guest-card, .room-card, .transactions-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guest-card:hover, .room-card:hover, .transactions-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.guest-info-header, .transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.guest-info, .room-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.guest-info h2, .room-info p {
+    margin: 0 0 15px;
+    font-size: 24px;
+    color: #00429d;
+    display: flex;
+    align-items: center;
+}
+
+.info-group, .room-info-group, .transaction-summary {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.info-group p, .room-info-group p, .room-info p, .transaction-summary p {
+    margin: 5px 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #555;
+}
+
+.guest-info .material-icons, .room-info .material-icons, .transaction-summary .material-icons {
+    margin-right: 8px;
+    color: #ffa07a;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+.room-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.room-details {
+    display: flex;
+    align-items: center;
+}
+
+.room-number {
+    font-size: 20px;
+    color: #00429d;
+    display: flex;
+    align-items: center;
+}
+
+.room-type {
+    background-color: #ffa07a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+}
+
+.status-badge {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.guest-info-group {
+    margin-top: 20px;
+}
+
+.guest-buttons, .transaction-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.guest-buttons button, .transaction-buttons button {
+    margin-left: 10px;
+}
+
+.transaction-details {
+    display: none;
+}
+
+.transaction-details.show {
+    display: block;
+}
+
+.transaction {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.transaction-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.transaction-summary p {
+    margin: 5px 10px;
+    flex: 1;
+}
